@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chore Chart</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class = "container">
+    
+    <br>
+    <h1 style="text-align: center; color: blue;">Kid's Chore Chart</h1>
+    <div class = "card">
+        <div class = "card-body">
+            <div class = "row">
+                
+            </div>
+            <div class = "row">
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="new-task">Task</label>
+                        <input type="text" class="form-control" id="new-task"> 
+                    </div>                
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="assignee">Assigned To</label>
+                        <input type="text" class="form-control" id="assignee">
+                    </div>
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="frequency">Frequency</label>
+                        <input type="text" class="form-control" id="frequency">
+                    </div>
+                </div>
+                <div class = "col-sm">
+                    <div class = "form-group">
+                        <label for="due-date">Due Date</label>
+                        <input type="date" class="form-control" id="due-date">
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div>
+                <button id = "add" class = "btn btn-primary from-control">Create</button>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <table id = "list" class = "table table-light table-striped">
+        <tr>
+            <th>Task</th>
+            <th>Assigned To</th>
+            <th>Frequency</th>
+            <th>Due Date</th>
+            <th>Actions</th>
+        </tr>
+    </table>
+
+    
+
+
+
+
+
+
+    
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
